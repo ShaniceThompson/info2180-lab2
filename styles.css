@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header Section */
+header {
+    background-color: #63b3ed;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+
+header .profile-pic {
+    margin-bottom: 1rem;
+}
+
+
+header .profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+header .info {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 1200px;
+}
+
+
+.blog-posts {
+    width: 65%;
+}
+
+
+.blog-posts article {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog-posts h2 {
+    font-size: 32px;
+    color: #48BB78;
+    margin-bottom: 0.5rem;
+}
+
+
+.blog-posts .date {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+
+.blog-posts img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+
+/* Sidebar */
+aside {
+    width: 30%;
+}
+
+
+aside section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+aside .about h3 {
+    color: #000000;
+}
+
+
+aside .social-media h3,
+aside .archives h3 {
+    color: #48BB78;
+}
+
+
+aside .about {
+    background-color: #E2E8F0;
+    padding: 1rem;
+}
+
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+aside ul li a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #2C5282;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .blog-posts, aside {
+        width: 100%;
+    }
+}
+
